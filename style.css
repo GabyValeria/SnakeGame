@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffe0e9, #c9e4de);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.game-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 400;
+    background-color: #ffd6e0;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#game-board {
+    width: 400px;
+    height: 400px;
+    background-color: #fdf6f0;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    border: 5px solid #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#game-board div {
+    width: 100%;
+    height: 100%;
+}
+
+.snake {
+    background: linear-gradient(145deg, #88d498, #57cc99);
+    border-radius: 40%;
+    border: 1px solid #e6f4ea;
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.4),
+                inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.food {
+    background: radial-gradient(circle at 30% 30%, #ff4e50, #b30000);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.3),
+                inset 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.food::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 8px;
+    background-color: #3e8e41;
+    border-radius: 2px;
+}
+
+.score {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+button,
+select {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffd6e0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+button:hover,
+select:hover {
+    background-color: #ffc2d1;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 5px;
+    font-weight: 500;
+}

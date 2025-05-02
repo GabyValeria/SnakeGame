@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Jogo da Cobrinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Jogo da Cobrinha</h1>
+        <div id="game-board"></div>
+        <div class="score">
+            Pontuação: <span id="score">0</span>
+        </div>
+        <div class="controls">
+            <button id="start-btn">Iniciar</button>
+            <button id="pause-btn">Pausar</button>
+            <button id="restart-btn">Recomeçar</button>
+        </div>
+        <label for="difficulty">Dificuldade:</label>
+        <select id="difficulty">
+            <option value="200">Fácil</option>
+            <option value="150" selected>Médio</option>
+            <option value="100">Difícil</option>
+            <option value="60">Insano</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
