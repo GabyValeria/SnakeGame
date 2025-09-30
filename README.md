@@ -1,2 +1,13 @@
 # SnakeGame 🐍
-O clássico jogo da cobrinha, simples e viciante! Desenvolvido com HTML, CSS e JavaScript. Controle a cobra com as setas do teclado, coma as maças e faça ela crescer! Mas cuidado… as paredes e o próprio corpo podem ser fatais! 🐍
+
+Um remake do clássico e viciante jogo da cobrinha, desenvolvido com HTML, CSS e JavaScript puros.
+
+## 🕹️ Como Jogar
+
+O objetivo é simples: crescer o máximo possível sem bater!
+
+-   **Use as setas do teclado (`↑`, `↓`, `←`, `→`)** para controlar a direção da cobra.
+-   **Coma as maçãs** para aumentar seu tamanho e sua pontuação.
+-   **Cuidado!** Evite colidir com as paredes ou com o próprio corpo da cobra.
+
+Divirta-se!
